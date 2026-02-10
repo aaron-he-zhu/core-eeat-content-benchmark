@@ -2,7 +2,9 @@
 
 > **8 dimensions × 10 items = 80 evaluation criteria** for optimizing content visibility across AI engines (GEO) and search engines (SEO).
 
-**Version**: 1.0 | **Author**: Aaron | **Updated**: 2026-02-06
+**Version**: 1.1 | **Author**: Aaron | **Updated**: 2026-02-10
+
+**Sister Project**: [CITE Domain Rating](../cite-domain-rating/) — domain-level authority assessment (40 items)
 
 ---
 
@@ -39,6 +41,16 @@ The two systems are mutually exclusive and collectively exhaustive:
 - **EEAT** = everything outside the content body — *Who wrote it? Why should we trust them?*
 
 **Quick rule**: If you can see it in the article/page → CORE. If you need to check the author/org/site → EEAT.
+
+### CORE-EEAT + CITE: The Complete Picture
+
+CORE-EEAT evaluates content; its sister project [CITE Domain Rating](../cite-domain-rating/) evaluates the domain behind the content. Together they form a complete 120-item assessment:
+
+| Benchmark | Evaluates | Level | Items | Core Question |
+|-----------|-----------|-------|-------|---------------|
+| **CORE-EEAT** | Content quality | Single page/article | 80 | Is this content worth citing? |
+| **CITE** | Domain authority | Entire domain | 40 | Is this domain worth trusting as a source? |
+| **Combined** | Full assessment | Content + Domain | **120** | Should AI engines cite this source? |
 
 ### 8 Dimensions
 
@@ -922,6 +934,30 @@ These items have the highest impact on AI engine visibility across all engines:
 
 *Comparison = custom implementation extending Product Schema.
 
+## CITE Domain Rating Integration
+
+> How CORE-EEAT content-level items feed into [CITE Domain Rating](../cite-domain-rating/) domain-level scores.
+
+When evaluating holistically, pair CORE-EEAT with CITE:
+
+| CORE-EEAT Items | Feeds Into CITE Item | Relationship |
+|-----------------|---------------------|--------------|
+| C02 (Direct Answer), O02 (Summary Box), E01 (Original Data) | CITE C05-C08 (AI Citations) | Citable content drives domain-level AI citations |
+| A07 (Knowledge Graph), A08 (Entity Consistency) | CITE I01 (Knowledge Graph Presence) | Content-level authority signals build domain identity |
+| O05 (Schema Markup), R09 (HTML Semantics) | CITE I04 (Schema.org Coverage) | Page-level Schema contributes to domain-wide coverage |
+| Ept01 (Author Identity), Ept02 (Credentials) | CITE I05 (Author Entity Recognition) | Content author signals build domain author recognition |
+| T03 (Security Standards) | CITE T07 (Technical Security) | Same signal, different scope (page vs domain) |
+| C03 (Query Coverage), E08 (Depth Advantage) | CITE E07-E08 (Topical Authority) | Content depth and coverage build domain topical authority |
+
+**Cross-evaluation pattern**:
+
+| Pattern | CITE Score | CORE-EEAT Score | Diagnosis | Action |
+|---------|-----------|-----------------|-----------|--------|
+| Strong domain, strong content | High | High | Ideal state | Maintain and expand |
+| Strong domain, weak content | High | Low | Authority wasted on poor content | Prioritize content quality (CORE-EEAT) |
+| Weak domain, strong content | Low | High | Great content, invisible domain | Build domain authority (CITE) |
+| Weak domain, weak content | Low | Low | Fundamental issues | Start with CORE-EEAT, then CITE |
+
 ## Common Errors
 
 | # | Error | Item | Wrong | Right |
@@ -970,4 +1006,5 @@ When unsure which dimension a check item belongs to:
 
 ## Changelog
 
+- **v1.1** (2026-02-10): Added CITE Domain Rating cross-references (Sister Project link, Complete Picture section, Integration Map)
 - **v1.0** (2026-02-06): Initial release — clean English benchmark with progressive disclosure architecture
