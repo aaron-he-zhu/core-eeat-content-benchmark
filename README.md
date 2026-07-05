@@ -1,5 +1,8 @@
 # CORE-EEAT Content Benchmark
 
+> **Working copy:** this standard is maintained in [aaron-marketing-skills — `references/core-eeat-benchmark.md`](https://github.com/aaron-he-zhu/aaron-marketing-skills/blob/main/references/core-eeat-benchmark.md)
+> and published here as its citable home. Framework changes land there first, then sync here (`scripts/sync-family.sh`).
+
 > **📦 Merged into [aaron-marketing-skills](https://github.com/aaron-he-zhu/aaron-marketing-skills)** — CORE-EEAT now ships inside the unified marketing skills library (v10.0.0) alongside the CITE and C³ frameworks and 38 marketing skills. This repo remains as the standalone source.
 
 > **8 dimensions × 10 items = 80 evaluation criteria** for optimizing content visibility across AI engines (GEO) and search engines (SEO).
